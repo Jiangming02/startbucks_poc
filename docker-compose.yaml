@@ -1,0 +1,19 @@
+services:
+  ragserver:
+    image: crpi-1m9ooobqcl6n7qpb.cn-beijing.personal.cr.aliyuncs.com/starbucks_poc/ragserver:latest
+    container_name: ragserver
+    restart: unless-stopped
+    ports:
+      - "30099:30099"
+    volumes:
+      - "/home/stb_admin/RAGServer:/home/RAGServer"
+    working_dir: /home/RAGServer
+    environment:
+      - PYTHONPATH=/home/RAGServer
+    command: python MainServer.py
+    networks:
+      - ragserver-network
+
+networks:
+  ragserver-network:
+    driver: bridge
