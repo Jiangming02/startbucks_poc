@@ -1,0 +1,7 @@
+server_address = "0.0.0.0"
+server_port = 30099
+#向量数据库GPU。如果使用CPU则注释掉
+#gpu_id = 0
+save_data_path = './save_datas.pkl'
+#数据保存间隔(s)
+save_data_interval = 300

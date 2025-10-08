@@ -1,0 +1,5 @@
+server_address = "0.0.0.0"
+server_port = 30097
+model_path = "D:/models/Qwen/Qwen3-Reranker-0___6B/"
+gpu_id = 0
+max_model_len = 10000

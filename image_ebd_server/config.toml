@@ -1,0 +1,6 @@
+server_address = "0.0.0.0"
+server_port = 30098
+model_path = "D:/models/AI-ModelScope/chinese-clip-vit-base-patch16/"
+##"ViT-H-14" "ViT-B-16"
+model_name = "ViT-H-14"
+gpu_id = 0
